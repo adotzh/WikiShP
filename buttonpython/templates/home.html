@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<TITLE> Shortest Path in Wikipedia Graph  </TITLE>
+</HEAD>
+
+<BODY bgcolor=ccccff text=grey >
+
+<BR> <BR>
+<H1> <center>Поиск кратчайшего пути</center> </H1>
+<BR> <BR> <BR>
+
+
+<form action="/calc/" method="post" name="form1">
+{% csrf_token %}
+Введите начало пути (название страницы в Википедии):
+<input type="text" name="param1" required>
+<br>
+{% csrf_token %}
+Введите конец пути (название страницы в Википедии):
+<input type="text" name="param2" required>
+<br>
+
+<br>
+<input type="submit" value="Shortest Path">
+<hr>
+Кратчайший путь:{{shortest_path}} <br>
+<p>
+    <img src="{{ MEDIA_URL}}WikipediaGraph.png"/>
+</p>
+</form>
+
+</BODY>
+</HTML>
