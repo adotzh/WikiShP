@@ -3,12 +3,14 @@ Wikipedia shortest path between two object
 
 Команда для запуска сервила на локальном компьютере: 
 - python manage.py migrate //перенос всех изменений в базу данных
-- python manage.py runserver 127.0.0.1:5900 //
+- python manage.py runserver 127.0.0.1:5900 //запуск локального сервера
 
 Проект написан на языке python c использованием следующих библиотек:
 - bs4 (BeautifulSoup) - для парсинга html страниц
 - django - для сбора проекта (общение клиент-сервер, парсинг, создание html - страницы)
-- 
+- requests - для запросов
+- networkx - для построение графа и рассчета кратчайшего пути
+- и др. (менее значимые)
 
 
 Подключение в локальной сети host'инга:
@@ -20,5 +22,6 @@ Wikipedia shortest path between two object
 Вариант2
 - добавляем в settings.py сточку ALLOWED_HOSTS=[///]
 - запускаем командой python manage.py runserver  0.0.0.0:8000
+- нужно прописать регистрацию на хостинге (замороченно, проще первый)
 
 
