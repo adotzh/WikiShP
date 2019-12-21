@@ -2,7 +2,10 @@
 Wikipedia shortest path between two object
 
 Команда для запуска сервила на локальном компьютере: 
-- python manage.py migrate //перенос всех изменений в базу данных
+- перенос всех изменений в базу данных
+```
+python manage.py migrate
+```
 - python manage.py runserver 127.0.0.1:5900 //запуск локального сервера
 
 Проект написан на языке python c использованием следующих библиотек:
