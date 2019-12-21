@@ -24,6 +24,7 @@ Wikipedia shortest path between two object
 Вариант1
 - ssh user@remote.host //заходим на сервер
 - scp -r  /Users/anastasiya_sh/Documents/buttonpython user@remote.host:/some/remote/directory/dir2 //копируем дирректорию
+- python manage.py runserver //запускаем проект
 
 Вариант2
 - добавляем в settings.py сточку ALLOWED_HOSTS=[///]
