@@ -27,11 +27,7 @@ python manage.py migrate
 Вариант1
 - ssh user@remote.host //заходим на сервер
 - scp -r  /Users/anastasiya_sh/Documents/buttonpython user@remote.host:/some/remote/directory/dir2 //копируем дирректорию
-- python manage.py runserver //запускаем проект
-
-Вариант2
-- добавляем в settings.py сточку ALLOWED_HOSTS=[///]
-- запускаем командой python manage.py runserver  0.0.0.0:8000
-- нужно прописать регистрацию на хостинге (замороченно, проще первый)
+- python3 manage.py runserver 0:8000 //запускаем проект, в setting.py указан доступный хост ALLOWED_HOSTS = ['10.55.170.29']
+- заходим на компьютере, подключенном к локальной сети в браузере 'http://10.55.170.29:8000/'
 
 
