@@ -1,7 +1,7 @@
 # Client-Server
 Wikipedia shortest path between two object
 
-Команда для запуска сервила на локальном компьютере: 
+Команда для запуска сервера на локальном компьютере: 
 - перенос всех изменений в базу данных
 ```
 python manage.py migrate
